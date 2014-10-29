@@ -83,7 +83,7 @@ public class GetFilesFromShareLink {
 	static class Download implements Runnable{
 
 		static private final HashSet<String> failed = new HashSet<String>();
-		static private final String token = "Bearer ya29.rQBwmUXXya_0LlKAC8QtOkbCT9RRtY-zzRpNs7AUKYjNv3w3z-tVELXMDjkDC4Fxgur-g--5MHzZPQ";
+		static private final String token = "Bearer ya29.rQDsW5mbwKulSLVYMwWwuo6CG2FszljTb_mvygVI3fvxxLTtbZB6ffVEDJmH5LJCEnfKMzW89aw4cw";
 		final Student student;
 		final String dir;
 
@@ -178,6 +178,7 @@ public class GetFilesFromShareLink {
 									, parts[0]));
 					
 				} catch(Exception e){
+					System.out.println(line);
 					e.printStackTrace();
 				}
 			}

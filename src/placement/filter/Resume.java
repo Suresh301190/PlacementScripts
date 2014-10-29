@@ -59,7 +59,9 @@ public class Resume {
 				String key = it.next();
 				if(map.containsKey(key)){
 					File file = map.get(key);
-					Files.copy(file.toPath(), new File(outDir + "/" + file.getName()).toPath());
+					try{
+						Files.copy(file.toPath(), new File(outDir + "/" + file.getName()).toPath());
+					}catch(Exception e){}
 				} 
 				else {
 					System.out.println("Does not exists Roll No: " + key);
