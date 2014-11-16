@@ -83,7 +83,7 @@ public class GetFilesFromShareLink {
 	static class Download implements Runnable{
 
 		static private final HashSet<String> failed = new HashSet<String>();
-		static private final String token = "Bearer ya29.rQDsW5mbwKulSLVYMwWwuo6CG2FszljTb_mvygVI3fvxxLTtbZB6ffVEDJmH5LJCEnfKMzW89aw4cw";
+		static private final String token = "Bearer ya29.vQDjM5RaU3-aMBmG9Bx5oLM9_WWW-i2R3F85m7hs3BsqjFDdKJ5WkpdgshI08vg0_Un3YhF28c_p9w";
 		final Student student;
 		final String dir;
 
